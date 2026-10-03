@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxide: Desert Roulette</title>
+    <style>
+        body { 
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://unsplash.com') no-repeat center center fixed; 
+            background-size: cover; color: white; font-family: 'Arial Black', Gadget, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; overflow: hidden; position: relative;
+        }
+        @keyframes particles {
+            0% { transform: translateY(100vh) translateX(0) scale(1); opacity: 0; }
+            50% { opacity: 0.8; }
+            100% { transform: translateY(-10vh) translateX(50px) scale(0.5); opacity: 0; }
+        }
+        .particle { position: absolute; bottom: 0; width: 4px; height: 4px; background: #f4a261; border-radius: 50%; box-shadow: 0 0 10px #e76f51; animation: particles 6s infinite linear; pointer-events: none; }
+        .container { text-align: center; background-color: rgba(20, 20, 20, 0.9); padding: 50px 40px; border-radius: 24px; width: 460px; box-shadow: 0 20px 50px rgba(0,0,0,0.9); border: 2px solid #d4a373; backdrop-filter: blur(10px); z-index: 2; }
+        h1 { font-size: 36px; text-transform: uppercase; letter-spacing: 3px; color: #f4a261; text-shadow: 3px 3px 6px rgba(0,0,0,0.9); margin-top: 0; margin-bottom: 15px; }
+        p { font-family: Arial, sans-serif; font-size: 16px; color: #ccc; line-height: 1.6; margin-bottom: 45px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); }
+        .spin-link { display: inline-block; text-decoration: none; background: linear-gradient(135deg, #e76f51, #f4a261); color: white; padding: 24px 70px; font-size: 34px; font-weight: bold; text-transform: uppercase; border-radius: 50px; box-shadow: 0 10px 30px rgba(231, 111, 81, 0.6); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); letter-spacing: 2px; animation: pulse 2s infinite; }
+        .spin-link:hover { transform: scale(1.08); box-shadow: 0 15px 35px rgba(231, 111, 81, 0.9); }
+        .spin-link:active { transform: scale(0.95); }
+        @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(231, 111, 81, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(231, 111, 81, 0); } 100% { box-shadow: 0 0 0 0 rgba(231, 111, 81, 0); } }
+    </style>
+</head>
+<body>
+    <div class="particle" style="left: 10%; animation-duration: 5s; animation-delay: 0s;"></div>
+    <div class="particle" style="left: 30%; animation-duration: 7s; animation-delay: 2s;"></div>
+    <div class="particle" style="left: 50%; animation-duration: 6s; animation-delay: 1s;"></div>
+    <div class="particle" style="left: 70%; animation-duration: 8s; animation-delay: 3s;"></div>
+    <div class="particle" style="left: 90%; animation-duration: 5s; animation-delay: 0.5s;"></div>
+
+    <div class="container">
+        <h1>Oxide Case</h1>
+        <p>Испытай свою удачу! Открывай секретные ящики с топовым лутом из Oxide: Survival Island прямо в нашем Telegram приложении.</p>
+        <!-- Твоя готовая ссылка на бота -->
+        <a href="https://t.me" class="spin-link">Крутить!</a>
+    </div>
+</body>
+</html>
